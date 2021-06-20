@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: lightgray;
+}
+
+li, a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content:space-between;
+    padding: 2rem 2rem
+}
+
+.nav_links{
+    list-style: none;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.nav_links li{
+    margin: 0 1rem;
+    display: inline-block;
+}
+
+.nav_links li a{
+    color: black;
+}
+
+.nav_links li a:hover{
+    font-weight: bold;
+}
+
+.searchBox{
+    border: none;
+    background-color: transparent;
+    padding:0;
+}
+
+.searchBox:focus {
+    border: none;
+    outline: none;
+}
+
+.ricerca button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.ricerca button:hover{
+    transform: scale(1.2);
+    font-weight: bold;
+}
