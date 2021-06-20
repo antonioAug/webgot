@@ -1,9 +1,11 @@
 import React from 'react';
+import Navigation from './navigation/navigation';
 
 const Main = () => {
-    return <h1>aas</h1> 
+    return <main>
+        <Navigation/>
+    </main> 
 }
 
 export default Main;
 
-fjadskljflkdsh

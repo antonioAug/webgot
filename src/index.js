@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Main from './main';
+import Webpages from './webpages'
 
 ReactDOM.render(
-  <Main/>,
+  <Webpages/>,
   document.getElementById('root')
 );
