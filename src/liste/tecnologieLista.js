@@ -8,12 +8,27 @@ const tecnologie = [
     {
         id: 1,
         name:'Python',
-        img: "../images/python-logo.png",
+        img: require('../images/python-logo.png').default
     },
     {
         id:2,
         name:'arduino',
-        img: '../images/arduino.png'
+        img: require('../images/arduino.png').default
+    },
+    {
+        id:3,
+        name:'raspberry',
+        img: require('../images/raspberry-logo.jpg').default
+    },
+    {
+        id:4,
+        name:'Php/SQL',
+        img: require('../images/php-logo.png').default
+    },
+    {
+        id:5,
+        name: 'Machine Learning',
+        img: require('../images/machine.png').default
     },
 
 ];

@@ -8,16 +8,19 @@ import {
 } from "react-router-dom";
 
 import Home from './homepage';
-import Didattica from './didattica'
+import Didattica from './didattica';
+import Accedi from './accedi';
+import Contatti from './contatti';
+import Privacy from './privacy-policy';
 
 const Webpages = () => {
     return (
         <Router>
             <Route exact path="/" component={Home}/>
             <Route path='/didattica' component={Didattica}/>
-            <Route path='/contatti' component={Didattica}/>
-            <Route path='/accedi' component={Didattica}/>
-            <Route path='/privacy' component={Didattica}/> 
+            <Route path='/contatti' component={Contatti}/>
+            <Route path='/accedi' component={Accedi}/>
+            <Route path='/privacy' component={Privacy}/> 
         </Router>    
     )
 }

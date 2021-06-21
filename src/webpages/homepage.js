@@ -3,6 +3,8 @@ import Navigation from '../navigation/navigation';
 import '../css/homepage.css';
 import listaTecnologie from '../liste/tecnologieLista';
 
+
+
 const Home = () => {
     return (
         <main>
@@ -20,7 +22,7 @@ const Home = () => {
 
 const Tecnologia = (props) => {
     const {id, name, img} = props.tecnologia;
-
+    
     return (
         <article>
             <img alt={name} className='logoTecnologia' src={img}></img>
