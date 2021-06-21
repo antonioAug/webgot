@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigation from '../navigation/navigation';
 
-const Home = () => {
+const Didattica = () => {
     return (
         <main>
             <Navigation/>
@@ -9,4 +9,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Didattica

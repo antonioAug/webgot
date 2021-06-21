@@ -13,9 +13,12 @@ li, a{
 }
 
 header{
+    margin: 0 auto;
     display: flex;
     justify-content:space-between;
-    padding: 2rem 2rem
+    padding: 2rem 3rem;
+    width: 90vw;
+    max-width: 1220px;
 }
 
 .nav_links{

@@ -2,9 +2,9 @@ import React from 'react';
 
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
-  Link
+//   Switch,
+//   Link
 } from "react-router-dom";
 
 import Home from './homepage';
@@ -15,6 +15,9 @@ const Webpages = () => {
         <Router>
             <Route exact path="/" component={Home}/>
             <Route path='/didattica' component={Didattica}/>
+            <Route path='/contatti' component={Didattica}/>
+            <Route path='/accedi' component={Didattica}/>
+            <Route path='/privacy' component={Didattica}/> 
         </Router>    
     )
 }

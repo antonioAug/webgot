@@ -1,0 +1,19 @@
+main{
+    display: inline;
+    justify-content: center;
+}
+
+.corpo{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vw;
+    width: 90vw;
+    background-color: red;
+    max-width: 1220px;
+}
+
+.logoTecnologia{
+    background-color: white;
+    width: 200px;
+    height: auto;
+}
