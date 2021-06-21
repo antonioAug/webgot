@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Navigation from '../navigation/navigation';
 import '../css/homepage.css';
 import listaTecnologie from '../liste/tecnologieLista';
@@ -6,25 +6,23 @@ import listaTecnologie from '../liste/tecnologieLista';
 
 
 const Home = () => {
+    const [num, setNum] = useState(0);
+
     return (
         <main>
             <Navigation/>
-            <section className='corpo'>
-                {
-                    listaTecnologie.map((tecnologia) => {
-                        return <Tecnologia key={tecnologia.id} tecnologia={tecnologia}/>
-                    })
-                }
+            <section className='tecnologie'>
+                <Tecnologia tecnologia={listaTecnologie[num]}/>
             </section>
         </main>
     )
 }
 
 const Tecnologia = (props) => {
-    const {id, name, img} = props.tecnologia;
-    
+    const {name, img} = props.tecnologia;
+
     return (
-        <article>
+        <article className='tecnologia'>
             <img alt={name} className='logoTecnologia' src={img}></img>
             <h1 className='nomeTecnologia'>{name}</h1>
         </article>
